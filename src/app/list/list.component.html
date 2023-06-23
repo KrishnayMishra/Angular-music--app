@@ -1,0 +1,21 @@
+<table class="table table-bordered table-dark">
+    <thead>
+    <tr>
+        <th>AlbumID</th>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Genre</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let a of albums;let i=index">
+        <td>{{a.id}}</td>
+        <td>{{a.title}}</td>
+        <td>{{a.artist}}</td>
+        <td>{{a.genre}}</td>
+        <td><button (click)="delete(i)">Delete</button></td>
+        
+    </tr>
+    </tbody>
+</table>
